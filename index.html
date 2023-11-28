@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>healthfood</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </head>
+  <body>
+    <div class="top-bar">
+      <span
+        ><ion-icon name="call-outline" class="phone"></ion-icon>111 222
+        333</span
+      >
+      <ul>
+        <li>
+          <a href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <ion-icon name="logo-discord"></ion-icon>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <nav>
+      <div class="logo">
+        <h2>healthfood</h2>
+      </div>
+      <div class="toggle">
+        <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+      </div>
+      <ul class="menu">
+        <li>
+          <a href="#"
+            ><ion-icon name="home-outline" class="menu-icon"></ion-icon> Home</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><ion-icon name="cart-outline" class="menu-icon"></ion-icon>
+            Market</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><ion-icon name="heart-outline" class="menu-icon"></ion-icon>
+            Favorite</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><ion-icon name="person-outline" class="menu-icon"></ion-icon> Me</a
+          >
+        </li>
+        <!-- <li><a href="#">Login</a></li>
+        <li><a href="#">Register</a></li> -->
+      </ul>
+    </nav>
+
+    <main>
+      <section class="apresentation">
+        <h3>
+          Descubra o poder da alimentação
+          <span class="text-emph">saudável</span>
+        </h3>
+        <p>
+          Na HealthFood, tornamos a alimentação saudável acessível a todos.
+          Nossa assinatura premium oferece benefícios exclusivos, incluindo
+          receitas selecionadas e consultoria nutricional, enquanto a opção
+          gratuita ainda fornece acesso a recursos essenciais.
+        </p>
+        <div class="buttons">
+          <a href="#" class="btn-free">Começar Grátis</a>
+          <a href="#" class="btn-pay">Assinar</a>
+        </div>
+      </section>
+
+      <section class="mid">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14408.359735958453!2d-46.3644908376518!3d-23.507028406835172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce7b4943281e89%3A0x8368c047b6eda9f0!2sETEC%20de%20Itaquaquecetuba!5e0!3m2!1spt-BR!2sbr!4v1701130468779!5m2!1spt-BR!2sbr"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+
+      <section class="quality">
+        <h3>Por que somos a melhor <span class="text-emph">opção?</span></h3>
+        <p>
+          Na HealthFood, acreditamos que uma vida mais saudável começa na
+          cozinha. Nossa plataforma, desenvolvida em colaboração com
+          profissionais de saúde e nutricionistas, oferece receitas deliciosas e
+          nutritivas, garantindo escolhas informadas. Além de uma variedade de
+          receitas, fornecemos análises críticas para uma visão holística das
+          escolhas alimentares. Comprometidos com sua saúde, a HealthFood é seu
+          parceiro confiável para uma vida equilibrada e saudável.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Desenvolvido com ❤</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+      $(function () {
+        $(".toggle").on("click", function () {
+          if ($(".menu").hasClass("active")) {
+            $(".menu").removeClass("active");
+            $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+          } else {
+            $(".menu").addClass("active");
+            $(this)
+              .find("a")
+              .html("<ion-icon name='close-outline'></ion-icon>");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
